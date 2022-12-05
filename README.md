@@ -68,7 +68,7 @@ To edit the exponential backoff built into the ConfigWrapper you can pass option
 import {ConfigWrapper} from 'klaviyo-api'
 
 ConfigWrapper("KLAVIYO PRIVATE KEY GOES HERE", {
-    numOfAttempts: 5, // max number of rety attempts. Default is 3
+    numOfAttempts: 5, // max number of retry attempts. Default is 3
     timeMultiple: 10, // how exponental the timing is. Default is 5
     startingDelay: 1000, // How long before first retry. Default is 500
 })
@@ -129,7 +129,7 @@ const r = await catalogApi.createCatalogCategory(body)
 
 ### Optional Parameters
 
-Different endpoint include specific optional parameters. Here is a few examples how to use these and what they look like
+Different endpoints include specific optional parameters. Here are a few examples of how to use these and what they look like
 
 #### Cursor based Pagination
 
